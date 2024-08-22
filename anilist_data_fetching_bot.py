@@ -3,14 +3,17 @@ from discord.ext import commands
 import requests
 import re
 
-# Define intents
+
 intents = discord.Intents.default()
 intents.message_content = True
 
-# Initialize bot with intents
+# Initialize bot
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 
+#Replace with Your_Discord_ID with your discoord ID and Your_bot_token with your actual discord bot token  
 OWNER_ID = 'Your_Discord_ID'
+
+TOKEN = 'Your_bot_token'
 
 @bot.event
 async def on_ready():
@@ -87,29 +90,17 @@ def fetch_anilist_user_data(username: str):
     return response.json().get('data', {}).get('User')
 
 def clean_about_text(text: str):
-    """
-    Replace HTML-like tags with Discord markdown and parse image links.
-    """
-    # Replace <b> and </b> with Discord's bold markdown
     text = text.replace('<b>', '**').replace('</b>', '**')
-    # Extract image URLs and format them for Discord
     image_urls = re.findall(r'~img\d+\((.*?)\)~', text)
     for url in image_urls:
         text = text.replace(f'~img500({url})~', f'\n![image]({url})\n')
-    # Remove other HTML-like tags (e.g., <center>)
     text = re.sub(r'<.*?>', '', text)
     return text
 
 def split_text(text, max_length):
-    """
-    Split text into chunks of a maximum length.
-    """
     return [text[i:i + max_length] for i in range(0, len(text), max_length)]
 
 def split_embed(embed, title):
-    """
-    Split a single embed into multiple embeds if it exceeds the size limit.
-    """
     MAX_EMBED_SIZE = 6000
     embeds = []
     current_embed = discord.Embed(title=title)
@@ -225,5 +216,4 @@ async def help(ctx):
     embed.set_footer(text="Replace <username> with the AniList username you want to look up.")
     await ctx.send(embed=embed)
 
-# Run the bot with your token
-bot.run('Yor_Bot_Token')
+bot.run(TOKEN)
