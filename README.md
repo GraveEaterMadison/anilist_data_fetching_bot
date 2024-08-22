@@ -23,6 +23,7 @@ Custom Help Command: A dedicated help command to list all available commands and
 Clone the repository:
 
 git clone https://github.com/GraveEaterMadison/anilist_data_fetching_bot.git
+
 cd anilist_data_fetching_bot
 
 
@@ -37,4 +38,5 @@ Replace 'Your Discord ID' in the OWNER_ID variable with your Discord user ID.
 
 
 # Run the bot:
+
 python bot.py
