@@ -12,13 +12,13 @@ Custom Help Command: A dedicated help command to list all available commands and
 
 # Commands
 
-!anilist_basic <username> : Fetch and display basic information about the specified AniList user.
+!anilist_basic (username) : Fetch and display basic information about the specified AniList user.
 
-!anilist_anime_stats <username> : Fetch and display the anime statistics of the specified AniList user.
+!anilist_anime_stats (username) : Fetch and display the anime statistics of the specified AniList user.
 
-!anilist_manga_stats <username> : Fetch and display the manga statistics of the specified AniList user.
+!anilist_manga_stats (username) : Fetch and display the manga statistics of the specified AniList user.
 
-!anilist_favourites <username> : Fetch and display the favorite anime, manga, characters, and staff of the specified AniList user.
+!anilist_favourites (username) : Fetch and display the favorite anime, manga, characters, and staff of the specified AniList user.
 
 !help: Display a list of available commands and their descriptions.
 
