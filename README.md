@@ -34,7 +34,10 @@ cd anilist_data_fetching_bot
 ```
 # Install the required packages:
 
+```bash
 pip install discord.py requests
+
+```
 
 # Set your Discord bot token and owner ID:
 
@@ -44,4 +47,7 @@ Replace 'Your Discord ID' in the OWNER_ID variable with your Discord user ID.
 
 # Run the bot:
 
+```bash
 python bot.py
+
+```
