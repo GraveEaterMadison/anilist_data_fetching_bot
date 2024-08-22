@@ -10,7 +10,7 @@ intents.message_content = True
 # Initialize bot with intents
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 
-OWNER_ID = 'Your Discord ID'
+OWNER_ID = 'Your_Discord_ID'
 
 @bot.event
 async def on_ready():
@@ -226,4 +226,4 @@ async def help(ctx):
     await ctx.send(embed=embed)
 
 # Run the bot with your token
-bot.run('Yor Bot Token')
+bot.run('Yor_Bot_Token')
