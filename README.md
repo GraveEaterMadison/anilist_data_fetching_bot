@@ -25,12 +25,13 @@ Custom Help Command: A dedicated help command to list all available commands and
 # Setup
 
 Clone the repository:
-bash```
+
+```bash
 git clone https://github.com/GraveEaterMadison/anilist_data_fetching_discord_bot.git
-```
+
 cd anilist_data_fetching_bot
 
-
+```
 # Install the required packages:
 
 pip install discord.py requests
