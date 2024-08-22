@@ -22,7 +22,7 @@ Custom Help Command: A dedicated help command to list all available commands and
 
 Clone the repository:
 
-git clone https://github.com/GraveEaterMadison/anilist_data_fetching_bot.git
+git clone https://github.com/GraveEaterMadison/anilist_data_fetching_discord_bot.git
 
 cd anilist_data_fetching_bot
 
