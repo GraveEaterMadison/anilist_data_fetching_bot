@@ -7,10 +7,10 @@ import re
 intents = discord.Intents.default()
 intents.message_content = True
 
-# Initialize bot
+
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 
-#Replace with Your_Discord_ID with your discoord ID and Your_bot_token with your actual discord bot token  
+ 
 OWNER_ID = 'Your_Discord_ID'
 
 TOKEN = 'Your_bot_token'
@@ -24,7 +24,7 @@ async def on_ready():
     else:
         print(f"Could not find user with ID {OWNER_ID}")
 
-# GraphQL queries for various user data
+
 ANILIST_USER_QUERY = '''
 query ($name: String) {
     User(name: $name) {
